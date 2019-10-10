@@ -54,5 +54,7 @@ public class SortStringLambda {
         // Using Comparator.comparingInt
         stringArrayList.sort(Comparator.comparingInt(String::length));
         System.out.println(stringArrayList);
+
+        new Thread(() -> System.out.println("Starting a Runnable")).start();
     }
 }
