@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class SortString {
+
     public static void main(String[] args) {
         List<String> stringArrayList = new ArrayList<>();
         stringArrayList.add("my first string text");
@@ -31,9 +32,9 @@ class LengthComparator implements Comparator<String> {
 
     @Override
     public int compare(String s1, String s2) {
-        if(s1.length() < s2.length())
+        if (s1.length() < s2.length())
             return -1;
-        if(s1.length() > s2.length())
+        if (s1.length() > s2.length())
             return 1;
         return 0;
     }
